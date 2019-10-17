@@ -273,8 +273,9 @@ int OVIMArrayContext::keyEvent(OVKeyCode* key, OVBuffer* buf,
 {
     int ret = 0;
     const char keycode = key->code();
+    // 2^ (w) 為 special case，先把它改成dvorak對應，之後在看有什麼方法可以變成通解。
     const bool validkey = keyseq.valid(keycode) || 
-      ( keyseq.getSeq()[0] == 'w' && isdigit(keycode) );
+      ( keyseq.getSeq()[0] == ',' && isdigit(keycode) );
 
     murmur("OVIMArray state: %d", state);
     if (!keyseq.length() && !isprint(keycode))

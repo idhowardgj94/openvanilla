@@ -100,7 +100,7 @@ private:
     void clearAll(OVBuffer* buf, OVCandidate* candi_bar);
     void clearCandidate(OVCandidate *candi_bar);
     int selectCandidate(int num, string& out);
-    bool isWSeq(char a, char b) const {  return a == 'w' && isdigit(b);    }
+    bool isWSeq(char a, char b) const {  return a == ',' && isdigit(b);    }
     bool isForceSPSeq()
 	{
         return keyseq.length() == 4 && !memcmp(keyseq.getSeq(),",,sp",4);

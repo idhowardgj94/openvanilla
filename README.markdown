@@ -1,3 +1,31 @@
+# OpenVanilla 行列Dvorak 鍵位修改版。
+
+在之前修改行列排列的時候，發現`2^`的一級簡碼（符號表）以及`8v`的一級簡碼發生不能使用的情形，猜測是因為`2^`的一級簡碼是special case處理的關係，trace過原始碼後，發現猜測的沒錯。
+
+目前先簡單的把special case的部份調整為相容於dvorak鍵位的排列。之後有空再想一個可以相容dvorak和qwerty鍵盤的solution。
+
+## 解決問題 ##
+
+目前此版本只針對「行列」做了點小修改，使得行列的英文鍵鑑符合`dvorak`鍵位。
+安裝此版本後，使用行列時，`shift` + 任一鍵 會輸出dvorak的英文，而非原版的qwerty英文鍵位。
+同時，在香草行列中使用caplock，鍵盤會轉為dvorak鍵位。
+
+此版本需尊照下方的安裝方式配置。
+
+此版本只修改行列部份，其它輸入法與原版相同。
+
+## 安裝方式 ##
+
+已經build好一個安裝檔在根目錄底下，安裝即可。
+若要自行bild專案，請參考下面的說明。
+
+安裝好後，請先將行列的鍵盤健位改成dvorak鍵位：
+
+```bash
+defaults write org.openvanilla.OVIMArray AlphanumericKeyboardLayout com.apple.keylayout.Dvorak
+```
+重新開機就好啦！
+
 # OpenVanilla 輸入法套件
 
 最新版本[由此處下載](https://github.com/openvanilla/openvanilla/releases)
