@@ -1,4 +1,6 @@
-# 更新日期：2017-01-11 
+# 2016-10-18 本檔利用行列科技所提供之arrayhw.txt (2001-12-24)轉換而成
+# 2020-11-06 修正 ux 誤植為 wx 的錯誤
+# 2021-07-25 修正 c,、c.、c/及 c; 的錯誤
 %ename array30-shortcode
 %cname 行列30簡碼表
 %encoding utf-8
@@ -7777,15 +7779,15 @@ uw	⎔
 uw	腦
 uw	臘
 ux	⎔
-wx	⎔
-wx	⎔
-wx	⎔
-wx	⎔
-wx	⎔
-wx	⎔
-wx	⎔
-wx	⎔
-wx	胎
+ux	⎔
+ux	⎔
+ux	⎔
+ux	⎔
+ux	⎔
+ux	⎔
+ux	⎔
+ux	⎔
+ux	胎
 uy	⎔
 uy	臃
 uy	⎔
